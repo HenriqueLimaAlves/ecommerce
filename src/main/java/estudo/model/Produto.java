@@ -18,9 +18,9 @@ public class Produto {
 
     private String nome;
 
-    private String descricao;
-
     private BigDecimal preco;
+
+    private String descricao;
 
     @Override
     public boolean equals(Object o) {
