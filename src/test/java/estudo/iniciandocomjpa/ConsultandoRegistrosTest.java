@@ -1,5 +1,6 @@
-package iniciandocomjpa;
+package estudo.iniciandocomjpa;
 
+import estudo.EntityManagerTest;
 import estudo.model.Produto;
 import org.junit.Assert;
 import org.junit.Test;

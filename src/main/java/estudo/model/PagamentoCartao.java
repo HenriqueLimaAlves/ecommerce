@@ -10,16 +10,16 @@ import javax.persistence.*;
 @Getter
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-@Table(name = "tb_cliente")
-public class Cliente {
-
+@Table(name = "tb_pagamento_cartao")
+public class PagamentoCartao {
     @Id
     @EqualsAndHashCode.Include
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String nome;
-
+    @Column(name = "pedido_id")
+    private Integer pedidoId;
+    @Column(name = "status_pedido")
     @Enumerated(EnumType.STRING)
-    private SexoCliente sexoCliente;
-
+    private StatusPagamento statusPedido;
+    private String numero;
 }

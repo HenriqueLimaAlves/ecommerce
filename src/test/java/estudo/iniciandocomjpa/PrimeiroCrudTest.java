@@ -1,5 +1,6 @@
-package iniciandocomjpa;
+package estudo.iniciandocomjpa;
 
+import estudo.EntityManagerTest;
 import estudo.model.Cliente;
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,7 +10,6 @@ public class PrimeiroCrudTest extends EntityManagerTest {
     @Test
     public void clienteInsertTest(){
         Cliente cliente = new Cliente();
-        cliente.setId(1);
         cliente.setNome("Jamal");
 
         entityManager.getTransaction().begin();

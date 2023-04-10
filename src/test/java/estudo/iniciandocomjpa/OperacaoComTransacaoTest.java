@@ -1,5 +1,6 @@
-package iniciandocomjpa;
+package estudo.iniciandocomjpa;
 
+import estudo.EntityManagerTest;
 import estudo.model.Produto;
 import org.junit.Assert;
 import org.junit.Test;
@@ -27,16 +28,15 @@ public class OperacaoComTransacaoTest extends EntityManagerTest {
         Produto produto = new Produto();
 
         produto.setDescricao("A melhor qualidade de som!");
-        produto.setId(4);
         produto.setNome("Mic AKG");
         produto.setPreco(new BigDecimal(7000));
 
         entityManager.getTransaction().begin();
-        entityManager.merge(produto);
+        Produto produtoSalvo = entityManager.merge(produto);
         entityManager.getTransaction().commit();
         entityManager.clear();
 
-        Assert.assertNotNull(entityManager.find(produto.getClass(), produto.getId()));
+        Assert.assertNotNull(entityManager.find(produto.getClass(), produtoSalvo.getId()));
     }
     @Test
     public void atualizarObjetoGerenciado(){
@@ -86,7 +86,6 @@ public class OperacaoComTransacaoTest extends EntityManagerTest {
         Produto produto = new Produto();
 
         produto.setDescricao("A melhor definição para suas fotos!");
-        produto.setId(2);
         produto.setNome("Camera Canon");
         produto.setPreco(new BigDecimal(5000));
 

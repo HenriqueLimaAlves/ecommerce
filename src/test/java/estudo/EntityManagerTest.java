@@ -1,4 +1,4 @@
-package iniciandocomjpa;
+package estudo;
 
 import org.junit.After;
 import org.junit.AfterClass;
