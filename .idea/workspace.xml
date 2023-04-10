@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5fdf868-12da-42f0-8891-9fb824cc3773" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="e5fdf868-12da-42f0-8891-9fb824cc3773" name="Changes" comment="dados iniciais e entityManager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estudo/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estudo/model/Produto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/banco-de-dados/dados-iniciais.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/banco-de-dados/dados-iniciais.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ConsultandoRegistrosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/iniciandocomjpa/ConsultandoRegistrosTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EntityManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/iniciandocomjpa/EntityManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,16 +62,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "C:/Users/henri/OneDrive/Área de Trabalho/Workspace/ecommerce/src/main/java/estudo",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/henri/OneDrive/Área de Trabalho/Workspace/ecommerce/src/main/java/estudo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/henri/OneDrive/Área de Trabalho/Workspace/2 - FirmasTech/ms-pedido&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -81,7 +85,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ConsultandoRegistrosTest">
+  <component name="RunManager" selected="JUnit.iniciandocomjpa in ecommerce">
     <configuration name="Application" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="estudo.Main" />
       <module name="ecommerce" />
@@ -89,49 +93,81 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IniciarUnidadeDePersistencia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="estudo.util.IniciarUnidadeDePersistencia" />
+    <configuration name="OperacaoComTransacaoTest.impedirOperacaoComBancoDeDados" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ecommerce" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="estudo.util.*" />
+          <option name="PATTERN" value="iniciandocomjpa.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsultandoRegistrosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ecommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ConsultandoRegistrosTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsultandoRegistrosTest.buscarPorIdentificador" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ecommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ConsultandoRegistrosTest" />
-      <option name="METHOD_NAME" value="buscarPorIdentificador" />
+      <option name="PACKAGE_NAME" value="iniciandocomjpa" />
+      <option name="MAIN_CLASS_NAME" value="iniciandocomjpa.OperacaoComTransacaoTest" />
+      <option name="METHOD_NAME" value="impedirOperacaoComBancoDeDados" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimeiroCrudTest.clienteBuscarPorId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ecommerce" />
+      <option name="PACKAGE_NAME" value="iniciandoComJpa" />
+      <option name="MAIN_CLASS_NAME" value="iniciandocomjpa.PrimeiroCrudTest" />
+      <option name="METHOD_NAME" value="clienteBuscarPorId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimeiroCrudTest.clienteDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ecommerce" />
+      <option name="PACKAGE_NAME" value="iniciandoComJpa" />
+      <option name="MAIN_CLASS_NAME" value="iniciandocomjpa.PrimeiroCrudTest" />
+      <option name="METHOD_NAME" value="clienteDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimeiroCrudTest.clienteUpdateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ecommerce" />
+      <option name="PACKAGE_NAME" value="iniciandoComJpa" />
+      <option name="MAIN_CLASS_NAME" value="iniciandocomjpa.PrimeiroCrudTest" />
+      <option name="METHOD_NAME" value="clienteUpdateTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iniciandocomjpa in ecommerce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ecommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="iniciandocomjpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="iniciandocomjpa" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Application" />
-      <item itemvalue="Application.IniciarUnidadeDePersistencia" />
-      <item itemvalue="JUnit.ConsultandoRegistrosTest" />
-      <item itemvalue="JUnit.ConsultandoRegistrosTest.buscarPorIdentificador" />
+      <item itemvalue="JUnit.iniciandocomjpa in ecommerce" />
+      <item itemvalue="JUnit.OperacaoComTransacaoTest.impedirOperacaoComBancoDeDados" />
+      <item itemvalue="JUnit.PrimeiroCrudTest.clienteBuscarPorId" />
+      <item itemvalue="JUnit.PrimeiroCrudTest.clienteDelete" />
+      <item itemvalue="JUnit.PrimeiroCrudTest.clienteUpdateTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ConsultandoRegistrosTest" />
-        <item itemvalue="JUnit.ConsultandoRegistrosTest.buscarPorIdentificador" />
-        <item itemvalue="Application.IniciarUnidadeDePersistencia" />
+        <item itemvalue="JUnit.iniciandocomjpa in ecommerce" />
+        <item itemvalue="JUnit.OperacaoComTransacaoTest.impedirOperacaoComBancoDeDados" />
+        <item itemvalue="JUnit.PrimeiroCrudTest.clienteDelete" />
+        <item itemvalue="JUnit.PrimeiroCrudTest.clienteBuscarPorId" />
+        <item itemvalue="JUnit.PrimeiroCrudTest.clienteUpdateTest" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680572828924</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dados iniciais e entityManager">
+      <created>1680581103701</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680581103701</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +211,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
     <MESSAGE value="persistence.xml e add de dependencias" />
-    <option name="LAST_COMMIT_MESSAGE" value="persistence.xml e add de dependencias" />
+    <MESSAGE value="dados iniciais e entityManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="dados iniciais e entityManager" />
   </component>
 </project>

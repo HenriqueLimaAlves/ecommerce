@@ -1,8 +1,10 @@
+package iniciandocomjpa;
+
 import estudo.model.Produto;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class ConsultandoRegistrosTest extends EntityManagerTest{
+public class ConsultandoRegistrosTest extends EntityManagerTest {
 
     @Test
     public void buscarPorIdentificador(){
